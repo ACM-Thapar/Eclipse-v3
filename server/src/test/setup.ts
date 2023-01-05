@@ -5,11 +5,7 @@ import request from "supertest";
 import { app } from "../app";
 
 declare global {
-  // namespace Nodejs {
-  //   interface Global {
   function getCookie(): Promise<string[]>;
-  //   }
-  // }
 }
 
 beforeAll(async () => {
