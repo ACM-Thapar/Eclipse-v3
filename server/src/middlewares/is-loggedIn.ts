@@ -2,12 +2,16 @@ import { NextFunction, Request, Response } from "express";
 import "dotenv/config";
 import jwt from "jsonwebtoken";
 import { MongooseError } from "mongoose";
+import { User } from "../models/user";
 
 interface Payload {
   id: string;
   email: string;
 }
-interface UserPayload {}
+interface UserPayload {
+  id: string;
+  email: string;
+}
 
 declare global {
   namespace Express {
@@ -25,10 +29,10 @@ async function isLoggedIn(req: Request, res: Response, next: NextFunction) {
     throw new Error("NOT AUTHORISED");
   }
   try {
-    // const payload: Payload = jwt.verify(decoded, process.env.JWT_SECRET!);
+    const payload = jwt.verify(decoded, process.env.JWT_SECRET!) as Payload;
     //fetch user
-    const user = {};
-    // const user = (await User.findById(payload.id)) as UserPayload;
+
+    const user = (await User.findById(payload.id)) as UserPayload;
     req.user = user;
   } catch (err) {
     if (err instanceof MongooseError) {
