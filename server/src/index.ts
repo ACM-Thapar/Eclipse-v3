@@ -17,7 +17,6 @@ function checkEnv() {
       process.exit(1);
     }
   });
-  //   console.log(process.env.PORT);
 }
 
 async function initServer() {
