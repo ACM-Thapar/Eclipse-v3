@@ -95,13 +95,6 @@ it("successful login", async () => {
 //get current user
 
 it("current user", async () => {
-  // const res = await request(app)
-  //   .post("/api/user/signup")
-  //   .send({
-  //     email: "jogeshgupta963@gmail.com",
-  //     password: "zxcvbnm",
-  //   })
-  //   .expect(201);
   const cookie = await global.getCookie();
   console.log(cookie);
   const response = await request(app)
