@@ -1,8 +1,6 @@
-import { ObjectId } from "mongoose";
+import { ObjectId, Document } from "mongoose";
 
-export interface UserSchema {
-  _id: ObjectId;
-  name: string;
+export interface UserDoc extends Document {
   email: string;
   password: string;
 }
