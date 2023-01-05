@@ -3,7 +3,14 @@ import { MongooseError } from "mongoose";
 import { connectDb } from "./database/connection";
 import "dotenv/config";
 function checkEnv() {
-  const env = ["PORT", "COOKIE_NAME", "JWT_SECRET", "MONGO_URI"];
+  const env = [
+    "PORT",
+    "NODE_ENV",
+    "COOKIE_NAME",
+    "JWT_SECRET",
+    "JWT_EXPIRATION",
+    "MONGO_URI",
+  ];
   env.forEach((data) => {
     if (!process.env[data]) {
       console.log(`${data} env not found`);
