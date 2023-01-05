@@ -23,7 +23,7 @@ const storeSchema = new mongoose.Schema(
   },
   {
     toJSON: {
-      transform(_, ret) {
+      transform(doc, ret) {
         ret.id = ret._id;
         delete ret._id;
       },
