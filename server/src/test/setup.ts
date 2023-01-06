@@ -4,8 +4,19 @@ import "dotenv/config";
 import request from "supertest";
 import { app } from "../app";
 
+interface product {
+  success: true;
+  data: {
+    item: string;
+    price: number;
+    description: string;
+    quantity: number;
+    id: string;
+  };
+}
 declare global {
   function getCookie(): Promise<string[]>;
+  function createProduct(price?: number): Promise<product>;
 }
 
 beforeAll(async () => {
@@ -20,12 +31,24 @@ beforeEach(async () => {
   }
 });
 
+// afterAll(done => {
+//   // Closing the DB connection allows Jest to exit successfully.
+//   mongoose.connection.close()
+//   done()
+// })
 
-afterAll(done => {
-  // Closing the DB connection allows Jest to exit successfully.
-  mongoose.connection.close()
-  done()
-})
+global.createProduct = async (price = 100) => {
+  const resp = await request(app)
+    .post("/api/store")
+    .send({
+      item: "Item1",
+      price,
+      description: "amasipfasfpopoa",
+      quantity: 10,
+    })
+    .expect(201);
+  return resp.body;
+};
 
 global.getCookie = async () => {
   const email = "joe@gmail.com";
