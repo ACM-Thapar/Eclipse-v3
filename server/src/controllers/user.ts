@@ -100,5 +100,8 @@ async function login(req: Request, res: Response) {
 async function getCurrentUser(req: Request, res: Response) {
   res.status(200).json(req.user);
 }
-
+async function signout(req: Request, res: Response) {
+  req.cookies[process.env.COOKIE_NAME!] = null;
+  return res.json({});
+}
 export { signup, login, getCurrentUser };
