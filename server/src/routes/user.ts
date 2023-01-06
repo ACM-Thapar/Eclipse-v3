@@ -8,5 +8,6 @@ const router = express.Router();
 router.route("/").get(isLoggedIn, getCurrentUser);
 router.route("/signup").post(userArgs, requestValidator, signup);
 router.route("/login").post(userArgs, requestValidator, login);
+router.route("/signout").post(isLoggedIn, login);
 
 export { router as userRouter };

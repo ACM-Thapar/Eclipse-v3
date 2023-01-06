@@ -1,5 +1,5 @@
-import { Document, ObjectId } from "mongoose";
-export interface TokenDoc extends Document {
+import mongoose, { ObjectId } from "mongoose";
+export interface TokenDoc extends mongoose.Document {
   tokens: number;
   userId: ObjectId;
 }

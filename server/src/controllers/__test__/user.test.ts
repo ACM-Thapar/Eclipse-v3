@@ -5,7 +5,7 @@ import { app } from "../../app";
 //signup
 
 it("returns a status on successful signup", async () => {
-  return request(app)
+  return await request(app)
     .post("/api/user/signup")
     .send({
       email: "jogeshgupta963@gmail.com",
@@ -13,8 +13,8 @@ it("returns a status on successful signup", async () => {
     })
     .expect(201);
 });
-it("invalid body returns 400", () => {
-  return request(app)
+it("invalid body returns 400", async () => {
+  return await request(app)
     .post("/api/user/signup")
     .send({
       email: "asflasa",
@@ -22,8 +22,8 @@ it("invalid body returns 400", () => {
     })
     .expect(400);
 });
-it("duplicate email returns 400", () => {
-  return request(app)
+it("duplicate email returns 400", async () => {
+  return await request(app)
     .post("/api/user/signup")
     .send({
       email: "asflasa",
@@ -46,7 +46,7 @@ it("setting cookie after signup", async () => {
 //login
 
 it("invalid email supplied", async () => {
-  return request(app)
+  return await request(app)
     .post("/api/user/login")
     .send({
       email: "joe@gmail.com",
@@ -56,7 +56,7 @@ it("invalid email supplied", async () => {
 });
 
 it("fails when incorrect password is supplied", async () => {
-  request(app)
+  await request(app)
     .post("/api/user/signup")
     .send({
       email: "joe@gmail.com",
@@ -64,7 +64,7 @@ it("fails when incorrect password is supplied", async () => {
     })
     .expect(201);
 
-  request(app)
+  await request(app)
     .post("/api/user/login")
     .send({
       email: "joe@gmail.com",
@@ -96,11 +96,10 @@ it("successful login", async () => {
 
 it("current user", async () => {
   const cookie = await global.getCookie();
-  console.log(cookie);
   const response = await request(app)
     .get("/api/user")
     .set("Cookie", cookie)
     .send({})
     .expect(200);
-  expect(response.body.email).toEqual("joe@gmail.com");
+  expect(response.body.data.email).toEqual("joe@gmail.com");
 });
