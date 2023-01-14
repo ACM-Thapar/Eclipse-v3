@@ -1,0 +1,127 @@
+/* ...................................................................................................................................................*/
+
+@font-face {
+  font-family:abouteclipseheading;
+  src: url('./assets/fonts/aAtmospheric.otf');
+}
+@font-face {
+  font-family:AboutText;
+  src: url('./assets/fonts/Poppins-Light.ttf');
+}
+
+*{
+  margin:0rem;
+  padding:0rem;
+}
+html{
+  font-size: 62.5%;
+}
+
+#AboutContainer{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100vh;
+  background-image: url('./images/About_bgimg.svg');
+  background-size: cover;
+  background-position: 0rem -15.0rem;
+  background-repeat: no-repeat;
+}
+#clouds{
+  display: flex;
+  flex-direction: row;
+}
+#clouds img{
+  position: absolute;
+  top:0rem;
+  height: 16.5rem;
+}
+#left{
+  left: 0rem;
+  width: 66.0rem;
+}
+#middle{
+  width: 240.0rem;
+}
+#right{
+  right: 0rem;
+  width: 70.0rem;
+}
+#AboutHeading{
+  color: white;
+  font-size: 4.8rem;
+  font-family: 'abouteclipseheading';
+  margin-left: 5.0rem;
+  margin-top: 10.0rem;
+  z-index: 1;
+}
+#TextContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+  height: 43.0rem;
+  width: 64.0rem;
+  background: linear-gradient(180.06deg, rgba(21, 38, 83, 0.6) 21.93%, rgba(137, 82, 32, 0.432) 99.95%);
+  box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25), 0rem .4rem .4rem rgba(0, 0, 0, 0.25), 0rem .4rem .4rem rgba(0, 0, 0, 0.25);
+  border-top-right-radius: 5.7rem;
+  border-bottom-right-radius: 5.7rem;
+  padding: 2.7rem;
+  line-height: 3.5rem;
+}
+#VerticalSpan{
+  height: 27.0rem;
+  border-left: thick solid #AFAFAF;
+  border-radius: 10.0rem;
+  margin-right: 3.5rem;
+}
+#Text{
+  font-family: 'AboutText';
+  color: white;
+  font-size: 2.0rem;
+}
+
+#button{
+  margin-left: 57.0rem;
+  margin-top: -3.5rem;
+}
+#KnowMe{
+  display: block;
+  background: linear-gradient(180deg, #AA6527 0%, rgba(0, 0, 0, 0.91) 100%);
+  border-radius: 3.8rem;  
+  color: white;
+  margin-left: 30.0rem;
+  font-size: 1.6rem;
+  font-family: 'AboutText';
+  font-weight: 600;
+  padding: 0rem 2.8rem;
+  line-height: 4.5rem;
+}
+
+@media (max-width:1234px){
+  html{
+    font-size: 55%;
+  }
+}
+@media (max-width:850px){
+  html{
+    font-size: 50%;
+  }
+}
+@media (max-width:680px){
+  html{
+    font-size: 45%;
+    background-position: center center;
+    background-size: contain;
+    background-attachment: fixed;
+  }
+  #TextContainer{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+/* ..................................................................................................................................................................*/
