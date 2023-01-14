@@ -3,6 +3,7 @@ import cloud_left from '../assets/images/About Section/About_cloud_left.svg';
 import cloud_middle from '../assets/images/About Section/About_cloud_middle.svg';
 import cloud_right from '../assets/images/About Section/About_cloud_right.svg';
 
+
 const About = () => {
     return (
         <>
