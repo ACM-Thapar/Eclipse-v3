@@ -1,0 +1,23 @@
+.modal-container{
+    display: flex;
+    height: 700px;
+    z-index: 100;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-bg{
+    position: absolute;
+    height: 100%;
+}
+
+.modal-bg > img {
+    height: 100%;
+}
+
+.modal-title{
+    position: absolute;
+    z-index: 1001;
+    color: white;
+}
