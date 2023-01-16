@@ -10,7 +10,6 @@ function App() {
   return (
     <ChakraProvider>
       <Home />
-      <AuthModal />
     </ChakraProvider>
   )  
 }
