@@ -3,10 +3,10 @@ import { useDisclosure } from '@chakra-ui/react'
 import './AuthModal.css'
 import modal from '../../assets/images/modal.svg'
 import Login from './Login'
-
+import Signup from './Signup'
 
 function AuthModal() {
-
+    const [login, setLogin] = React.useState(true)
 
   return (
     <>
@@ -17,10 +17,10 @@ function AuthModal() {
                     <img src={modal} alt="" />
                 </div>
                 <div className="modal-title">
-                    Login
+                    Create Account
                 </div>
                 <div className="login-form">
-                    <Login />
+                    <Signup />
                 </div>
             </div>
             

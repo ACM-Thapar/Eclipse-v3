@@ -9,7 +9,7 @@ import AuthModal from './components/AuthModal/AuthModal';
 function App() {
   return (
     <ChakraProvider>
-      <Home />
+      <AuthModal />
     </ChakraProvider>
   )  
 }
