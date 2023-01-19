@@ -1,0 +1,148 @@
+* {
+    overflow: hidden;
+}
+
+@font-face {
+    font-family:atmospheric;
+    src: url('../../assets/fonts/aAtmospheric.otf');
+  }
+
+
+.main-container{ 
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.main-container-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/images/bg3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 0.5s;
+    animation-name: bganimation;
+    animation-timing-function: ease;
+}
+
+.main-containersidebg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 75px;
+    background: url('../../assets/images/bg2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-duration: 0.5s;
+    animation-name: sidebganimation;
+    animation-timing-function: ease;
+}
+
+.main-heading{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading > h1 {
+    position: inherit;
+    font-size: 240px;
+    font-family: atmospheric;
+    animation: heading;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+
+@keyframes heading {
+    0%{ transform:translateY(300px); opacity: 1;}
+    25%{transform: translateY(-50px); opacity: 1;}
+    45%{transform: translateY(10px); opacity: 1;}
+    60%{transform: translateY(-10px); opacity: 1;}
+    75%{transform: translateY(2px); opacity: 1;}
+    90%{transform: translateY(-2px); opacity: 1}
+    100%{opacity: 1;}
+}
+
+
+.building-container {
+    display: flex;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 25%;
+    bottom: 25%;
+    background: url('../../assets/images/buildings.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.clouds-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    flex-direction: row;
+}
+
+.sub-cloud1{
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+}
+
+.sub-cloud2{
+    position: absolute;
+    left: 400px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.sub-cloud3{
+    position: absolute;
+    left: 550px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.sub-cloud4{
+    position: absolute;
+    left: 650px;
+    display: inline-block;
+    width: fit-content;
+}
+.sub-cloud5{
+    position: absolute;
+    left: 750px;
+    display: inline-block;
+    width: fit-content;
+}
+
+
+
+
+@keyframes bganimation {
+    0% {
+        transform:scale(4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes sidebganimation {
+    0% {
+        transform:translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+        display: none;
+    }
+}
