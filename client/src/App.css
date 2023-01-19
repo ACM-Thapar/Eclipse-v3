@@ -22,7 +22,7 @@ html{
   flex-direction: column;
   width:100%;
   height: 100vh;
-  background-image: url('./images/About_bgimg.svg');
+  background-image: url('./assets/images/About Section/About_bgimg.svg');
   background-size: cover;
   background-position: 0rem -15.0rem;
   background-repeat: no-repeat;
