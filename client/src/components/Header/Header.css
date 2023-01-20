@@ -1,0 +1,74 @@
+@font-face {
+    font-family:atmospheric;
+    src: url('../../assets/fonts/aAtmospheric.otf');
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    position: absolute;
+    z-index: 1000;
+}
+
+.left-header {
+    color: white;
+    display: flex;
+    background: linear-gradient(180deg, #010810 0%, #07263B 100%);;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+    animation-name: leftanimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.left-header > a {
+    font-family: atmospheric;
+    font-size: 16px;
+    color: #FCF195;
+    text-decoration: none;
+}
+
+.center-header {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    background: url('../../assets/images/logo.svg') center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+
+
+.right-header {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, #010810 0%, #07263B 100%);;
+    width: 40%;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+    animation-name: leftanimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+.right-header > a {
+    font-family: atmospheric;
+    font-size: 16px;
+    color: #FCF195;
+    text-decoration: none;
+}
+
+@keyframes leftanimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 40%;
+    }
+}

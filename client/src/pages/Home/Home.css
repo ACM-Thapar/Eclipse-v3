@@ -21,7 +21,7 @@
     background: url('../../assets/images/bg3.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: bganimation;
     animation-timing-function: ease;
 }
@@ -34,7 +34,7 @@
     background: url('../../assets/images/bg2.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: sidebganimation;
     animation-timing-function: ease;
 }
