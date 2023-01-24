@@ -7,7 +7,7 @@ function Header() {
     <>
         <div className="header-container">
             <div className="left-header">
-                <a href="/">ABOUT</a>
+                <a href="/about">ABOUT</a>
                 <a href="/">EVENTS</a>
                 <a href="/">TIMELINE</a>
             </div>
