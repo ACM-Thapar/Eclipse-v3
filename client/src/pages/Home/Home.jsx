@@ -7,6 +7,7 @@ import cloud3 from '../../assets/images/cloud3.svg'
 import cloud4 from '../../assets/images/cloud4.svg'
 import buildings from '../../assets/images/buildings.svg'
 
+
 function Home() {
   return (
     <>
