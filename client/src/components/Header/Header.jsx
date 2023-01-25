@@ -17,7 +17,7 @@ function Header() {
             <div className="right-header">
                 <a href="/">CONTACT US</a>
                 <a href="/">STORE</a>
-                <a href="/">LOG IN</a>
+                <a href="/login">LOG IN</a>
             </div>
         </div>
     </>
