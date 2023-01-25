@@ -12,15 +12,14 @@ function App() {
     <>
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route
-          path="/"
-          element={
+        <Route path="/" element={
             <div>
               <Header />
               <Home />
             </div>
           }
         />
+        <Route path="/login" element={<AuthModal/>}/>
       </Routes>
     </>
   );
