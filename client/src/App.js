@@ -19,7 +19,7 @@ function App() {
             </div>
           }
         />
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<AuthModal/>}/>
       </Routes>
     </>
   );
