@@ -1,8 +1,27 @@
 import React from 'react'
 import './Header.css'
 import logo from '../../assets/images/logo.svg'
+import AuthModal from '../AuthModal/AuthModal'
+import { useRef } from 'react'
 
 function Header() {
+  const modal = useRef(null);
+
+  const toggleModal = () => {
+    if (modal.current.style.display === "flex") {
+      modal.current.style.display = "none";
+    }
+    else {
+      modal.current.style.display = "flex";
+    }
+  }
+
+  const handleClickOutside = (e) => {
+    if (e.target === modal.current) {
+      toggleModal();
+    }
+  }
+  
   return (
     <>
         <div className="header-container">
@@ -17,8 +36,11 @@ function Header() {
             <div className="right-header">
                 <a href="/">CONTACT US</a>
                 <a href="/">STORE</a>
-                <a href="/login">LOG IN</a>
+                <a className='login-button' onClick={toggleModal}>LOG IN</a>
             </div>
+        </div>
+        <div onClick={handleClickOutside} ref={modal} className="modal-container1">
+          <AuthModal />
         </div>
     </>
   )

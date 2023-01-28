@@ -72,3 +72,21 @@
         width: 40%;
     }
 }
+
+.modal-container1 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #403f36a8;
+    backdrop-filter: blur(10px);
+}
+
+.login-button {
+    cursor: pointer;
+}

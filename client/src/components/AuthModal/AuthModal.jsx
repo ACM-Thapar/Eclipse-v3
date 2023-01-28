@@ -6,7 +6,7 @@ import Login from './Login'
 import Signup from './Signup'
 
 function AuthModal() {
-    const [login, setLogin] = React.useState(true)
+    const [login, setLogin] = React.useState(true);
 
   return (
     <>
@@ -20,7 +20,7 @@ function AuthModal() {
                     Create Account
                 </div>
                 <div className="login-form">
-                    <Signup />
+                    {login ? <Login login setLogin={setLogin} /> : <Signup login setLogin={setLogin} />}
                 </div>
             </div>
             

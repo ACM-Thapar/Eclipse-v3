@@ -4,7 +4,7 @@ import google from '../../assets/images/google.svg'
 import apple from '../../assets/images/apple.svg'
 import facebook from '../../assets/images/facebook.svg'
 
-function Signup() {
+function Signup({ login, setLogin }) {
     const [loginForm, setLoginForm] = useState({
         email: '',
         password: '',
@@ -17,14 +17,16 @@ function Signup() {
             required
             name="text" 
             type="text" 
-            placeholder="username" 
-            mb={4} 
+            placeholder="Full Name" 
+            mb={12} 
             bg="white"
             height="36px"
             width="200px"
             color="black"
-            border="1px solid white"
+            border="none"
             outline="none"
+            borderRadius={8}
+            paddingX={12}
             _focus={{outline: "none", border: "none"}}
             _placeholder={{color: "#969696"}}  
         />
@@ -32,14 +34,16 @@ function Signup() {
             required
             name="email" 
             type="email" 
-            placeholder="email" 
-            mb={4} 
+            placeholder="Email" 
+            mb={12} 
             bg="white"
             height="36px"
             width="200px"
             color="black"
-            border="1px solid white"
+            border="none"
             outline="none"
+            borderRadius={8}
+            paddingX={12}
             _focus={{outline: "none", border: "none"}}
             _placeholder={{color: "#969696"}}  
         />
@@ -47,15 +51,17 @@ function Signup() {
             required
             name="password" 
             type="password" 
-            placeholder="password" 
+            placeholder="Password"
             mb={2} 
             bg="white"
             height="36px"
             width="200px"
             color="black"
+            outline="none"
+            borderRadius={8}
+            paddingX={12}
             _placeholder={{color: "#969696"}}
             border="1px solid white"   
-            boxSizing="border-box"
             appearance="none"
             
         />
@@ -77,8 +83,8 @@ function Signup() {
                 Sign Up
             </Button>
             <Flex justifyContent="center">
-                <Text color="#969696">Don't have an account? </Text>
-                <Text color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign Up</Text>
+                <Text color="#969696">Already have an account? </Text>
+                <Text onClick={() => setLogin(true)} color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign In </Text>
                 <Text color="#969696" ml={1}>now.</Text>
             </Flex>
             <Flex mt={4}>
