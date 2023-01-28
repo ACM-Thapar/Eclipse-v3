@@ -4,7 +4,7 @@ import google from '../../assets/images/google.svg'
 import apple from '../../assets/images/apple.svg'
 import facebook from '../../assets/images/facebook.svg'
 
-function Login() {
+function Login({ login, setLogin }) {
     const [loginForm, setLoginForm] = useState({
         email: '',
         password: '',
@@ -16,14 +16,16 @@ function Login() {
             required
             name="text" 
             type="text" 
-            placeholder="username" 
-            mb={4} 
+            placeholder="Username" 
+            mb={12} 
             bg="white"
             height="36px"
             width="200px"
             color="black"
-            border="1px solid white"
+            border="none"
             outline="none"
+            borderRadius={8}
+            paddingX={12}
             _focus={{outline: "none", border: "none"}}
             _placeholder={{color: "#969696"}}  
         />
@@ -31,15 +33,17 @@ function Login() {
             required
             name="password" 
             type="password" 
-            placeholder="password" 
+            placeholder="Password"
             mb={2} 
             bg="white"
             height="36px"
             width="200px"
             color="black"
+            borderRadius={8}
+            paddingX={12}
             _placeholder={{color: "#969696"}}
-            border="1px solid white"   
-            boxSizing="border-box"
+            border="none"
+            outline="none"
             appearance="none"
             
         />
@@ -62,7 +66,7 @@ function Login() {
             </Button>
             <Flex justifyContent="center">
                 <Text color="#969696">Don't have an account? </Text>
-                <Text color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign Up</Text>
+                <Text onClick={() => setLogin(false)} color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign Up</Text>
                 <Text color="#969696" ml={1}>now.</Text>
             </Flex>
             <Flex mt={6}>
