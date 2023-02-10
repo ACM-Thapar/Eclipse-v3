@@ -16,8 +16,8 @@ function AuthModal() {
                 <div className="modal-img">
                     <img src={modal} alt="" />
                 </div>
-                <div className="modal-title">
-                    Create Account
+                <div style={{ justifyContent: 'center', width: '57%', fontSize: login && 30 }} className="modal-title">
+                    {login ? 'Login' : 'Create Account'}
                 </div>
                 <div className="login-form">
                     {login ? <Login login setLogin={setLogin} /> : <Signup login setLogin={setLogin} />}
