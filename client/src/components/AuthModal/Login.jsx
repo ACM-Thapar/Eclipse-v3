@@ -61,26 +61,27 @@ function Login({ login, setLogin }) {
             bg="#976D00"
             fontWeight="bold"
             fontSize="18px"
+            marginBottom={15}
             >
-                Log In
+                Login
             </Button>
-            <Flex justifyContent="center">
-                <Text color="#969696">Don't have an account? </Text>
-                <Text onClick={() => setLogin(false)} color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign Up</Text>
-                <Text color="#969696" ml={1}>now.</Text>
+            <Flex marginBottom={25} justifyContent="center">
+                <Text fontSize={15} color="#969696">Don't have an account,&nbsp;</Text>
+                <Text fontSize={15} onClick={() => setLogin(false)} color="white" ml={1} textDecoration="underline" cursor="pointer"> Sign Up&nbsp;</Text>
+                <Text fontSize={15} color="#969696" ml={1}>now.</Text>
             </Flex>
-            <Flex mt={6}>
+            <Flex mb={25} mt={6}>
                 <Text color="white" fontSize="16px" fontWeight={600}>Or</Text>
             </Flex>
             <Flex display="flex" mt={6}>
                 <Flex>
-                    <Image src={google} height={14} cursor="pointer" />
+                    <Image src={google} height={30} cursor="pointer" />
                 </Flex>
                 <Flex>
-                    <Image src={apple} height={14} ml={4} cursor="pointer" />
+                    <Image src={apple} height={30} ml={18} cursor="pointer" />
                 </Flex>
                 <Flex>
-                    <Image src={facebook} height={14} ml={4} cursor="pointer" />
+                    <Image src={facebook} height={30} ml={18} cursor="pointer" />
                 </Flex>
             </Flex>
         </form>
