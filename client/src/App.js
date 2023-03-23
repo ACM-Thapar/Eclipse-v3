@@ -6,20 +6,26 @@ import { Route, Router, Routes } from "react-router-dom";
 import About from "./pages/About";
 import AuthModal from "./components/AuthModal/AuthModal";
 import Header from "./components/Header/Header";
+import Sponsors from "./pages/Sponsors/Sponsors";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path="/" element={
+        <Route path="/sponsors" element={<Sponsors />} />
+
+        <Route
+          path="/"
+          element={
             <div>
-              <Header />
-              <Home />
+              {/* <Header />
+              <Home /> */}
+              <Sponsors />
             </div>
           }
         />
-        <Route path="/login" element={<AuthModal/>}/>
+        <Route path="/login" element={<AuthModal />} />
       </Routes>
     </>
   );
