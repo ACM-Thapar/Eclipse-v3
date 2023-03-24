@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: top;
     margin-top: 60px;
+    max-height: 100px;
 
 }
 
@@ -37,6 +38,7 @@
     position: top;
     font-size: 60px;
     font-family: atmospheric;
+
 }
 
 .contact-heading{
@@ -47,8 +49,8 @@
     color: white;
     justify-content: center;
     align-items: top;
-    margin-top: 60px;
-
+    margin-top: 100px;
+    max-height: 100px
 }
 
 .contact-heading > h1 {
@@ -62,6 +64,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 180px;
+
   }
   
 .grid-item {
@@ -79,6 +82,64 @@
     .grid-item {
       width: 80%;
     }
+    .contact-form {
+        width: 80%        
+    }
+    .sponsors-heading > h1 {
+        font-size: 40px;
+    }
+    .contact-heading > h1 {
+        font-size: 40px;
+    }
+    }
+  
+
+  .contact-form-bg{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    margin-top: 200px; 
+   background-color: #2D2D2D;
+   align-items: center;
+   justify-content: center;  
   }
+  .contact-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 0%;
+
+}
+
+  .contact-form > input {
+    width: 50%;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .contact-form > textarea {
+    width: 50%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .contact-form > button {
+    width: 20%;
+    height: 30px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #2D2D2D;
+    color: white;
+    border-color: #CA9136;
+border-width: 2px;
+  } 
   
   
