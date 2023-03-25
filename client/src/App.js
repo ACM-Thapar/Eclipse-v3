@@ -6,6 +6,10 @@ import { Route, Router, Routes } from "react-router-dom";
 import About from "./pages/About";
 import AuthModal from "./components/AuthModal/AuthModal";
 import Header from "./components/Header/Header";
+import Events from "./pages/Events/Events";
+import Hacklipse from "./components/Hacklipse/Hacklipse";
+import Flamingo from "./components/Flamingo/Flamingo";
+import Engima from "./components/Engima/Engima";
 import Sponsors from "./pages/Sponsors/Sponsors";
 
 function App() {
@@ -13,6 +17,10 @@ function App() {
     <>
       <Routes>
         <Route path="/about" element={<About />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/event/hacklipse" element={<Hacklipse />} />
+        <Route path="/event/flamingo" element={<Flamingo />} />
+        <Route path="/event/engima" element={<Engima />} />
         <Route path="/sponsors" element={<Sponsors />} />
 
         <Route
