@@ -3,6 +3,7 @@ import './Header.css'
 import logo from '../../assets/images/logo.svg'
 import AuthModal from '../AuthModal/AuthModal'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   const modal = useRef(null);
@@ -26,13 +27,11 @@ function Header() {
     <>
         <div className="header-container">
             <div className="left-header">
-                <a href="/about">ABOUT</a>
-                <a href="/">EVENTS</a>
+                <Link to="/about">ABOUT</Link>
+                <Link to="/events">EVENTS</Link>
                 <a href="/">TIMELINE</a>
             </div>
-            <div className="center-header">
-                
-            </div>
+            <div className="center-header"></div>
             <div className="right-header">
                 <a href="/">CONTACT US</a>
                 <a href="/">STORE</a>
