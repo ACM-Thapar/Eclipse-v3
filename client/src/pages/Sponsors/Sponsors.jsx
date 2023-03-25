@@ -1,5 +1,14 @@
 import React, {useState} from "react";
 import "./Sponsors.css"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+import {
+    faFacebook,
+    faInstagram,
+    faYoutube,
+    faLinkedin,    
+  } from "@fortawesome/free-brands-svg-icons";
    
 const Sponsors = () => {
     const [name, setName] = useState('');
@@ -47,10 +56,40 @@ const Sponsors = () => {
                     <button onClick={submit}>Submit</button>
                 </div>
                 </div>
-
-            </div>
-            </div>
+                    <div className="footer-bg">
+                        <div className="footer">
+                            <div className="footer-left">
+                                <div className="footer-text">
+                                    Lorem ipsum dolor sit amet, consectetur 
+                                    adipiscing elit. Nunc vulputate libero et 
+                                    velit interdum, ac aliquet odio mattis. 
+                                </div>                         
+                               <div className="socials">
+                               <a href="https://www.facebook.com/acmthapar/"><FontAwesomeIcon icon={faFacebook} size="2xl" className="social-icon" /></a>
+                               <a href="https://www.instagram.com/acmthapar/?hl=en"><FontAwesomeIcon icon={faInstagram} size="2xl"className="social-icon"  /></a>
+                               <a href="https://www.youtube.com/channel/UCZBjG5uzKFH4hYtpttKYP5Q?app=desktop"><FontAwesomeIcon icon={faYoutube} size="2xl" className="social-icon" /></a>
+                               <a href="https://www.linkedin.com/company/thapar-acm-student-chapter?originalSubdomain=in"><FontAwesomeIcon icon={faLinkedin} size="2xl"className="social-icon"  /></a>
+                                </div>                            
+                            </div>
+                            <div className="footer-right">
+                            <div className="footer-text">
+                                    Get in touch                                  
+                            </div> 
+                            <div className="footer-text">
+                            Have Queries? Reach out to us anytime!
+                            </div>
+                            <div className="contacts">
+                            <FontAwesomeIcon icon={faEnvelope} size="xl" className="contact-icon" />
+                            <FontAwesomeIcon icon={faEnvelope} size="xl" className="contact-icon" />
+                            <FontAwesomeIcon icon={faPhone} size="xl" className="contact-icon" />
+                            <FontAwesomeIcon icon={faPhone} size="xl" className="contact-icon" />
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
+            </div>
           )   
 }
 
