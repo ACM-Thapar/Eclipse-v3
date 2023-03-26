@@ -10,6 +10,7 @@ import Events from "./pages/Events/Events";
 import Hacklipse from "./components/Hacklipse/Hacklipse";
 import Flamingo from "./components/Flamingo/Flamingo";
 import Engima from "./components/Engima/Engima";
+import Sponsors from "./pages/Sponsors/Sponsors";
 
 function App() {
   return (
@@ -20,14 +21,19 @@ function App() {
         <Route path="/event/hacklipse" element={<Hacklipse />} />
         <Route path="/event/flamingo" element={<Flamingo />} />
         <Route path="/event/engima" element={<Engima />} />
-        <Route path="/" element={
+        <Route path="/sponsors" element={<Sponsors />} />
+
+        <Route
+          path="/"
+          element={
             <div>
-              <Header />
-              <Home />
+              {/* <Header />
+              <Home /> */}
+              <Sponsors />
             </div>
           }
         />
-        <Route path="/login" element={<AuthModal/>}/>
+        <Route path="/login" element={<AuthModal />} />
       </Routes>
     </>
   );
