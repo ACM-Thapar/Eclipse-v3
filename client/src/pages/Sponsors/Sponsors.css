@@ -1,0 +1,263 @@
+* {
+    overflow-y: ;
+}
+
+@font-face {
+    font-family:atmospheric;
+    src: url('../../assets/fonts/aAtmospheric.otf');
+  }
+
+.sponsors-container{ 
+    height: 100vh;
+    width: 100vw;
+}
+
+.sponsors-container-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #171717;
+
+}
+
+.sponsors-heading{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: top;
+    margin-top: 60px;
+    max-height: 100px;
+
+}
+
+.sponsors-heading > h1 {
+    position: top;
+    font-size: 60px;
+    font-family: atmospheric;
+
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 180px;
+
+}
+  
+.grid-item {
+    width: 45%;
+    height: 200px;
+    margin: 10px;
+    background-color: #2D2D2D;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.contact-heading{
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: top;
+    margin-top: 100px;
+    max-height: 100px
+
+}
+
+.contact-heading > h1 {
+    position: top;
+    font-size: 60px;
+    font-family: atmospheric;
+
+}
+ .contact-form-bg{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    margin-top: 200px; 
+   background-color: #2D2D2D;
+   align-items: center;
+   justify-content: center; 
+   padding-bottom: 20px;
+  }
+
+  .contact-form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0%;
+    margin-left: 0%;
+
+}
+
+  .contact-form > input {
+    width: 50%;
+    height: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .contact-form > textarea {
+    width: 50%;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .contact-form > button {
+    width: 20%;
+    height: 30px;
+    margin: 10px;
+    font-size: 15px;
+    background-color: #2D2D2D;
+    color: white;
+    border-color: #CA9136;
+    border-width: 2px;
+  } 
+
+  .footer-bg{
+    margin: auto;
+    margin-top: 100px; 
+    height: 400px;
+   background-color: #111111;
+   align-items: center;
+   justify-content: center; 
+  }
+
+  .footer{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .footer-left{
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 50px;
+  
+  }
+
+  .footer-text {
+    color: white;
+    font-size: 15px;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: row  ;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    margin-left: 0; 
+    margin-right: auto;
+  }
+
+.social-icon {
+    margin-right: 15px;
+  }
+
+a{
+    color: white;
+  }
+.footer-right{
+    width: 48%;
+    padding-top: 50px; 
+    padding-left: 50px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.contact-icon {
+    padding: 5px;
+    margin-left: 0; 
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .sponsors-heading > h1 {
+        font-size: 40px;
+    }
+
+    .grid-item {
+      width: 80%;
+    }
+
+    .contact-form {
+        width: 80%        
+    }
+
+    .contact-form > input {
+        width: 80%;
+    }
+
+    .contact-form > textarea {
+        width: 80%;
+    }
+
+    .contact-form > button {
+        width: 40%;
+    }
+
+    .contact-form-bg {
+        width: 80%;
+    }
+    
+    .contact-heading > h1 {
+        font-size: 40px;
+    }
+
+    .footer-left{
+        width: 100%;
+        margin-bottom: 20px;    
+    }
+
+    .footer-right{
+        width: 100%;
+        margin-bottom: 20px;    
+    }
+
+    .socials{
+    margin-left: 0%;
+    padding: 8px;
+    }
+
+    .social-icon {
+        margin-right: 10px;
+        size: xl;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+
+}

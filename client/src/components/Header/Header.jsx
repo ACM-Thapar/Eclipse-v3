@@ -34,7 +34,7 @@ function Header() {
             <div className="center-header"></div>
             <div className="right-header">
                 <a href="/">CONTACT US</a>
-                <a href="/">STORE</a>
+                <Link to="/sponsors">SPONSORS</Link>
                 <a className='login-button' onClick={toggleModal}>LOG IN</a>
             </div>
         </div>
