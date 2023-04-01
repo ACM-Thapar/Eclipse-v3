@@ -11,6 +11,7 @@ import Hacklipse from "./components/Hacklipse/Hacklipse";
 import Flamingo from "./components/Flamingo/Flamingo";
 import Engima from "./components/Engima/Engima";
 import Sponsors from "./pages/Sponsors/Sponsors";
+import Tracks from "./pages/Tracks/Tracks";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/event/hacklipse" element={<Hacklipse />} />
         <Route path="/event/flamingo" element={<Flamingo />} />
         <Route path="/sponsors" element={<Sponsors />} />
+        <Route path="/tracks" element={<Tracks />} />
         
 
         <Route
