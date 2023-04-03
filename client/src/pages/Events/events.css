@@ -40,8 +40,35 @@ canvas {
 }
 
 .event-name {
+    display: flex;
+    justify-content: center;
     font-size: 400%;
     color: white;
     text-align: center;
     margin-top: 40px;
+}
+
+.arrow {
+    transition: all 0.1s;
+    border-radius: 35%;
+}
+
+.arrow:hover {
+    background-color: white;
+    color: white;
+}
+
+/* .left-arrow {
+
+}
+
+.right-arrow {
+
+} */
+
+
+@media only screen and (max-width: 500px) {
+    .event-name-img {
+        transform: scale(0.8);
+    }
 }
