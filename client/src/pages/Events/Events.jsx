@@ -1,10 +1,13 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 import './events.css';
 import background from '../../assets/images/eventsBackground.png';
 import Menu from '../../components/Menu/Menu.jsx';
-import bottomText from '../../assets/images/bottomText.svg';
+import Hacklipse from '../../assets/images/bottomText.svg';
+import Enigma from '../../assets/images/enigma.svg';
+import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 
 const Events = () => {
+  const [meshSelected, setMeshSelected] = useState(2);
   return (
     <Suspense>
         <div className='events-container'>
@@ -12,10 +15,16 @@ const Events = () => {
             <img className='background' src={background} alt="" />
             <div className="heading">EVENTS</div>
             <div className="menu">
-                <Menu />
+                <Menu meshSelected={meshSelected} setMeshSelected={setMeshSelected} />
             </div>
             <div className="event-name">
-                <img src={bottomText} alt="" />
+                {
+                  meshSelected === 1 ? (<img className='event-name-img' src={Enigma} alt="" />)
+                  :
+                  meshSelected === 2 ? (<img className='event-name-img' src={Hacklipse} alt="" />)
+                  :
+                  <img className='event-name-img' src={Enigma} alt="" />
+                }
             </div>
         </div>
     </Suspense>
