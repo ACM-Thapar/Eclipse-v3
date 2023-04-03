@@ -1,0 +1,29 @@
+@font-face {
+    font-family: atmospheric;
+    src: url('../../assets/fonts/aAtmospheric.otf');
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+.timeline-container {
+    background: url('../../assets/images/timelinebg.png') center no-repeat fixed;
+    height: 100vh;
+    padding: 70px 0px;
+    font-family: atmospheric;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.title > img {
+    display: flex;
+    height: 5%;
+}

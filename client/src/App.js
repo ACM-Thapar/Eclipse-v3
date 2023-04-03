@@ -12,6 +12,7 @@ import Flamingo from "./components/Flamingo/Flamingo";
 import Engima from "./components/Engima/Engima";
 import Sponsors from "./pages/Sponsors/Sponsors";
 import Tracks from "./pages/Tracks/Tracks";
+import Timeline from "./pages/Timeline/Timeline";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Route path="/event/flamingo" element={<Flamingo />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/tracks" element={<Tracks />} />
-        
+        <Route path="/timeline" element={<Timeline />} />
 
         <Route
           path="/"
