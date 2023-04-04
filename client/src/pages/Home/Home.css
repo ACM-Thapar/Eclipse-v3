@@ -11,7 +11,7 @@
 .main-container{ 
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
 }
 
@@ -248,5 +248,13 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .main-containersidebg {
+        position: relative;
     }
 }

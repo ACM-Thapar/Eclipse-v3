@@ -13,7 +13,7 @@ const Events = () => {
   return (
     <Suspense>
         <div className='events-container'>
-            <div className="center-header-1"></div>
+            {/* <div className="center-header-1"></div> */}
             <img className='background' src={background} alt="" />
             <div className="heading">EVENTS</div>
             <div className="menu">
