@@ -16,21 +16,21 @@ const Tracks = () => {
             <div className="track-box-container-1">
                 <div className="track track-1">
                   <img src={Track1} alt="" />
-                  <div className="track-name">Lorem Ipsum</div>
+                  <div className="track-name">Education</div>
                 </div>
                 <div className="track track-2">
                   <img src={Track2} alt="" />
-                  <div className="track-name">Lorem Ipsum</div>
+                  <div className="track-name">Social Issues</div>
                 </div>
             </div>
             <div className="track-box-container-2">
                 <div className="track track-3">
                   <img src={Track3} alt="" />
-                  <div className="track-name">Open Innovation</div>
+                  <div className="track-name">FinTech</div>
                 </div>
                 <div className="track track-4">
                   <img src={Track4} alt="" />
-                  <div className="track-name">Agriculture</div>
+                  <div className="track-name">Open Innovation</div>
                 </div>
             </div>
         </div>
