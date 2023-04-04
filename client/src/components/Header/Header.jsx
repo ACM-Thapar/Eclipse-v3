@@ -27,14 +27,14 @@ function Header() {
     <>
         <div className="header-container">
             <div className="left-header">
-                <Link to="/about">ABOUT</Link>
-                <Link to="/events">EVENTS</Link>
+                <a href="#about">ABOUT</a>
+                <a href="#events">EVENTS</a>
                 
             </div>
             <div className="center-header"></div>
             <div className="right-header">
-                <Link to="/timeline">TIMELINE</Link>
-                <Link to="/sponsors">SPONSORS</Link>
+                <a href="#timeline">TIMELINE</a>
+                <a href="#sponsors">SPONSORS</a>
             </div>
         </div>
         <div onClick={handleClickOutside} ref={modal} className="modal-container1">

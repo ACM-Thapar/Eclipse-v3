@@ -12,7 +12,7 @@ const Events = () => {
   const [meshSelected, setMeshSelected] = useState(2);
   return (
     <Suspense>
-        <div className='events-container'>
+        <div id='events' className='events-container'>
             {/* <div className="center-header-1"></div> */}
             <img className='background' src={background} alt="" />
             <div className="heading">EVENTS</div>

@@ -3,7 +3,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <>
+        <div id='about'>
             <div id="AboutContainer" >
            
                     {/* <div id="clouds">
@@ -34,7 +34,7 @@ const About = () => {
                 {/* <div id="button">
                     <button id="KnowMe">Know me</button>
                 </div> */}
-        </>
+        </div>
     )
 }
 

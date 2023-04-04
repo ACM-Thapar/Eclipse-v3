@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Canvas, useLoader } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-// import * as THREE from 'three'
+import * as THREE from 'three'
 import { TextureLoader } from 'three'
 import pyramid1 from '../../assets/images/pyramid1br.png'
 import pyramid2 from '../../assets/images/pyramid2br.png'
@@ -30,6 +30,13 @@ const Menu = ({ meshSelected, setMeshSelected }) => {
     const texture1 = useLoader(TextureLoader, pyramid1);
     const texture2 = useLoader(TextureLoader, pyramid2);
     const texture3 = useLoader(TextureLoader, pyramid3);
+
+    texture1.wrapS = THREE.RepeatWrapping;
+    texture1.wrapT = THREE.RepeatWrapping;
+    texture2.wrapS = THREE.RepeatWrapping;
+    texture2.wrapT = THREE.RepeatWrapping;
+    texture3.wrapS = THREE.RepeatWrapping;
+    texture3.wrapT = THREE.RepeatWrapping;
 
     const pyramid1Ref = useRef(null);
     const pyramid2Ref = useRef(null);
@@ -155,22 +162,22 @@ const Menu = ({ meshSelected, setMeshSelected }) => {
     <Canvas className='canvas-1' style={{ cursor: 'pointer' }}>
         <animated.mesh ref={pyramid2Ref} onClick={() => meshSelectedTrigger(2)} position={position2.position}>
             <planeBufferGeometry attach="geometry" args={pyramid2Args} />
-            <meshBasicMaterial attach="material" map={texture1} />
+            <meshBasicMaterial attach="material" map={texture1} transparent={true} />
         </animated.mesh>
 
         <animated.mesh ref={pyramid1Ref} onClick={() => meshSelectedTrigger(1)} position={position1.position}>
             <planeBufferGeometry attach="geometry" args={pyramid1Args} />
-            <meshBasicMaterial attach="material" map={texture2} />
+            <meshBasicMaterial attach="material" map={texture2} transparent={true} />
         </animated.mesh>
 
         <animated.mesh ref={pyramid3Ref} onClick={() => meshSelectedTrigger(3)} position={position3.position}>
             <animated.planeBufferGeometry attach="geometry" args={pyramid3Args} />
-            <meshBasicMaterial attach="material" map={texture3} />
+            <meshBasicMaterial attach="material" map={texture3} transparent={true} />
         </animated.mesh>
 
         <animated.mesh ref={pyramid4Ref} onClick={() => meshSelectedTrigger(4)} position={position4.position}>
             <animated.planeBufferGeometry attach="geometry" args={pyramid4Args} />
-            <meshBasicMaterial attach="material" map={texture3} />
+            <meshBasicMaterial attach="material" map={texture3} transparent={true} />
         </animated.mesh>
 
 

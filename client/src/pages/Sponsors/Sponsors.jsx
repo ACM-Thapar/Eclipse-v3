@@ -34,7 +34,7 @@ const Sponsors = () => {
     }
     return (
             
-            <div className = "sponsors-container">
+            <div id="sponsors" className = "sponsors-container">
                 <div className="sponsors-container-bg">
                 
                 <div className="sponsors-heading">
