@@ -90,3 +90,16 @@
 .login-button {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 950px) {
+    .right-header {
+        display: none;
+    }
+    .left-header {
+        display: none;
+    }
+    .center-header {
+        width: 100%;
+    }
+}

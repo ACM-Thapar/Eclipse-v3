@@ -33,6 +33,10 @@ function App() {
             <div>
               <Header />
               <Home />
+              <About />
+              <Events />
+              <Timeline />
+              <Sponsors />
             </div>
           }
         />
