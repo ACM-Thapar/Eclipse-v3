@@ -10,7 +10,7 @@
   /* ....................................................ABOUT SECTION...............................................................................................*/
   
   
-  
+
   
   #AboutContainer{
     display: flex;
@@ -27,7 +27,13 @@
     background-image: url('../../assets/images/About Section/About_bgimg.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
   }
+
+  #container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+
   #clouds{
     display: flex;
     flex-direction: row;
@@ -49,10 +55,12 @@
     width: 70.0rem;
   }
   #AboutHeading{  
+    display: flex;
     color: white;
     font-size: 4.8rem;
     font-family: 'abouteclipseheading';
     margin-left: 5.0rem;
+    overflow: hidden;
     margin-top: 3.0rem;
     z-index: 1;
     animation-name: slideRight;
@@ -67,19 +75,19 @@
     justify-content: space-around;
     justify-content: space-evenly;
     margin-top: 3rem;
-    height: 65.0rem;
+    height: 60.0rem;
     width: 90rem;
     background: linear-gradient(180.06deg, rgba(21, 38, 83, 0.6) 21.93%, rgba(137, 82, 32, 0.432) 99.95%);
     box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.25), 0rem .4rem .4rem rgba(0, 0, 0, 0.25), 0rem .4rem .4rem rgba(0, 0, 0, 0.25);
     border-top-right-radius: 5.7rem;
     border-bottom-right-radius: 5.7rem;
-    padding: 3.0rem;
+    padding: 1.0rem;
     line-height: 3.5rem;
     animation-name: slideRight;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
     animation-delay: 0.5s;
-    overflow: auto;
+    overflow-y: auto;
     /* overflow-y: auto; */
   }
   #VerticalSpan{
@@ -93,7 +101,7 @@
   #Text{
     font-family: 'AboutText';
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     animation-name: slideRight;
     animation-duration: 1.5s;
     animation-iteration-count: 1;

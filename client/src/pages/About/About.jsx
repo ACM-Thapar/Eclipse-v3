@@ -11,7 +11,7 @@ const About = () => {
                         <img src={cloud_middle} alt="" id="middle" />
                         <img src={cloud_right} alt="" id="right" />
                     </div> */}
-                <span id="AboutHeading" >ABOUT ECLIPSE</span>
+                <div id="AboutHeading" >ABOUT ECLIPSE</div>
                
                 <div id="TextContainer">
 

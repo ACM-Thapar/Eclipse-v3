@@ -43,6 +43,9 @@ function Home() {
           <div className="sub-cloud5">
             <img src={cloud4} alt="cloud3" />
           </div>
+          <div className="sub-cloud6">
+            <img src={cloud4} alt="cloud3" />
+          </div>
         </div>
       </div>
     </>

@@ -153,6 +153,14 @@
     top: 40%;
 }
 
+.sub-cloud6{
+    position: absolute;
+    left: 85rem;
+    display: inline-block;
+    width: fit-content;
+    top: 40%;
+}
+
 }
 
 @keyframes heading {
