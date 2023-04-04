@@ -11,6 +11,8 @@
 .main-container{ 
     height: 100vh;
     width: 100vw;
+    position: absolute;
+    overflow: hidden;
 }
 
 
@@ -28,9 +30,9 @@
 
 .main-containersidebg{
     position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 75px;
+    height: 100vh;
+    width:100vw;
+    left: 7.5rem;
     background: url('../../assets/images/bg2.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,8 +44,8 @@
 .main-heading{
     display: flex;
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     color: white;
     justify-content: center;
     align-items: center;
@@ -51,21 +53,114 @@
 
 .main-heading > h1 {
     position: inherit;
-    font-size: 240px;
+    font-size: 17vw;
     font-family: atmospheric;
     animation: heading;
     animation-duration: 2s;
     animation-delay: 1s;
 }
 
+@media (max-width: 672px) {   
+     
+    .main-container-bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background: url('../../assets/images/bg_bottom.svg');
+        background-size: cover;
+        animation-duration: 1s;
+        animation-name: bganimation;
+        animation-timing-function: ease;
+    }
+    
+    .main-containersidebg{
+        top: 35vh;
+        background: url('../../assets/images/bg_top.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-duration: 1s;
+        animation-name: sidebganimation;
+        animation-timing-function: ease;
+        background-position: center;        
+    }
+    
+    .main-heading{
+        height: 50%;
+        top: 5vh;
+    }
+    
+    .main-heading > h1 {
+        font-size: 15vw;
+    }
+    
+    .building-container {
+    top: 70%;
+    background: url('../../assets/images/buildings.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.clouds-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    flex-direction: row;
+    top: 70%;
+}
+
+.sub-cloud1{
+    position: absolute;
+    display: inline-block;
+    width: fit-content;
+    height: 100%;
+    top: 40%;
+}
+
+.sub-cloud2{
+    position: absolute;
+    left: 40rem;
+    display: inline-block;
+    width: fit-content;
+    top: 100%;
+}
+
+.sub-cloud3{
+    position: absolute;
+    left: 55rem;
+    display: inline-block;
+    width: fit-content;
+    top: 40%;
+}
+
+.sub-cloud4{
+    position: absolute;
+    left: 65rem;
+    display: inline-block;
+    width: fit-content;
+    top: 55%;
+}
+.sub-cloud5{
+    position: absolute;
+    left: 75rem;
+    display: inline-block;
+    width: fit-content;
+    top: 40%;
+}
+
+}
 
 @keyframes heading {
-    0%{ transform:translateY(300px); opacity: 1;}
-    25%{transform: translateY(-50px); opacity: 1;}
-    45%{transform: translateY(10px); opacity: 1;}
-    60%{transform: translateY(-10px); opacity: 1;}
-    75%{transform: translateY(2px); opacity: 1;}
-    90%{transform: translateY(-2px); opacity: 1}
+    0%{ transform:translateY(60rem); opacity: 0;}
+    25%{transform: translateY(-5rem); opacity: 1;}
+    45%{transform: translateY(1rem); opacity: 1;}
+    60%{transform: translateY(-1rem); opacity: 1;}
+    75%{transform: translateY(0.2rem); opacity: 1;}
+    90%{transform: translateY(-0.2rem); opacity: 1}
     100%{opacity: 1;}
 }
 
@@ -90,6 +185,7 @@
     width: 100%;
     height: 35%;
     flex-direction: row;
+    overflow: hidden;
 }
 
 .sub-cloud1{
@@ -100,27 +196,27 @@
 
 .sub-cloud2{
     position: absolute;
-    left: 400px;
+    left: 40rem;
     display: inline-block;
     width: fit-content;
 }
 
 .sub-cloud3{
     position: absolute;
-    left: 550px;
+    left: 55rem;
     display: inline-block;
     width: fit-content;
 }
 
 .sub-cloud4{
     position: absolute;
-    left: 650px;
+    left: 65rem;
     display: inline-block;
     width: fit-content;
 }
 .sub-cloud5{
     position: absolute;
-    left: 750px;
+    left: 75rem;
     display: inline-block;
     width: fit-content;
 }
@@ -143,6 +239,5 @@
     }
     100% {
         transform: translateX(0);
-        display: none;
     }
 }
