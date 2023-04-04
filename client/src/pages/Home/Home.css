@@ -57,7 +57,8 @@
     font-family: atmospheric;
     animation: heading;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease;
 }
 
 @media (max-width: 672px) {   

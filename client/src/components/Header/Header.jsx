@@ -29,7 +29,7 @@ function Header() {
             <div className="left-header">
                 <Link to="/about">ABOUT</Link>
                 <Link to="/events">EVENTS</Link>
-                <a href="/">TIMELINE</a>
+                <Link to="/timeline">TIMELINE</Link>
             </div>
             <div className="center-header"></div>
             <div className="right-header">
