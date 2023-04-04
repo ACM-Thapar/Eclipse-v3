@@ -3,7 +3,7 @@ import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import Home from "./pages/Home/Home";
 import { Route, Router, Routes } from "react-router-dom";
-import About from "./pages/About";
+import About from "./pages/About/About";
 import AuthModal from "./components/AuthModal/AuthModal";
 import Header from "./components/Header/Header";
 import Events from "./pages/Events/Events";
