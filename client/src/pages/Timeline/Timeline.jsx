@@ -7,7 +7,7 @@ import title from '../../assets/images/TIMELINE.png'
 
 const Timeline = () => {
   return (
-    <div className="timeline-container">
+    <div id='timeline' className="timeline-container">
     <div className="title">
         <img src={title} alt="" />
     </div>
