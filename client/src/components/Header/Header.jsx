@@ -29,13 +29,12 @@ function Header() {
             <div className="left-header">
                 <Link to="/about">ABOUT</Link>
                 <Link to="/events">EVENTS</Link>
-                <Link to="/timeline">TIMELINE</Link>
+                
             </div>
             <div className="center-header"></div>
             <div className="right-header">
-                <Link to="/sponsors">CONTACT US</Link>
+                <Link to="/timeline">TIMELINE</Link>
                 <Link to="/sponsors">SPONSORS</Link>
-                <a className='login-button' onClick={toggleModal}>LOG IN</a>
             </div>
         </div>
         <div onClick={handleClickOutside} ref={modal} className="modal-container1">

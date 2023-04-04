@@ -2,6 +2,8 @@ import React from 'react';
 import './eventsModal.css';
 import Hacklipse from '../../assets/images/bottomText.svg';
 import Enigma from '../../assets/images/enigma.svg';
+import Kaggle from '../../assets/images/kaggle.svg';
+import Flamingo from '../../assets/images/Flamingo.svg';
 // import Hacklipse from '../../assets/images/bottomText.svg';
 import { FaWindowClose } from 'react-icons/fa';
 import Tracks from '../../pages/Tracks/Tracks';
@@ -15,7 +17,10 @@ const EventsModal = ({ closeModal, eventNumber }) => {
       :
       (eventNumber === 2 ? <img className='hacklipse-logo' src={Hacklipse} alt="" />
       :
-      <p className='flamingo-heading'>FLAMINGO</p>
+      (eventNumber === 3 ? <img className='hacklipse-logo' src={Flamingo} alt="" />
+      :
+      <p className="flamingo-heading">KAGGLE WARS</p>
+      )
       )
       }
       <div className="register-button">
