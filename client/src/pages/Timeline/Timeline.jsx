@@ -16,7 +16,7 @@ const Timeline = () => {
     lineColor={"black"}> 
   <VerticalTimelineElement
     className="vertical-timeline-element--work timeline-element"
-    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '20px 0px 0px 0px', height: '100px' }}
+    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '20px 0px 0px 0px', height: '100px', fontSize: '16px' }}
     contentArrowStyle={{ borderRight: '7px solid  black' }}
     date="2011 - present"
     iconStyle={{ background: 'black', color: '#fff' }}
@@ -24,43 +24,43 @@ const Timeline = () => {
     <h3 className="vertical-timeline-element-title">ENIGMA</h3>
     
     <p>
-      DURATION: 
+      DURATION: 6th - 9th April
     </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work timeline-element"
     date="2010 - 2011"
     iconStyle={{ background: 'black', color: '#fff' }}
-    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '0px 30px 0px 0px', height: '100px' }}
+    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '0px 30px 0px 0px', height: '100px', fontSize: '16px' }}
   >
   <h3 className="vertical-timeline-element-title">KAGGLE WARS</h3>
     
   <p>
-    DURATION: 
+    DURATION: 9th April
   </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work timeline-element"
     date="2008 - 2010"
     iconStyle={{ background: 'black', color: '#fff' }}
-    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '30px 0px 0px 0px' }}
+    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '30px 0px 0px 0px', height: '100px', fontSize: '16px' }}
   >
   <h3 className="vertical-timeline-element-title">FLAMINGO</h3>
     
   <p>
-    DURATION: 
+    DURATION: 7th April
   </p>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2006 - 2008"
     iconStyle={{ background: 'black', color: '#fff' }}
-    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '0px 30px 0px 0px' }}
+    contentStyle={{ background: 'rgba(0,0,0,0.2)', color: '#fff', border: '5px solid gray', borderRadius: '0px 30px 0px 0px', height: '100px', fontSize: '16px' }}
   >
   <h3 className="vertical-timeline-element-title">HACKLIPSE</h3>
     
   <p>
-    DURATION: 
+    DURATION: 8th - 9th April
   </p>
   </VerticalTimelineElement>
   

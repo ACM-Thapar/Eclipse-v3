@@ -24,7 +24,14 @@ const EventsModal = ({ closeModal, eventNumber }) => {
       )
       }
       <div className="register-button">
-        {eventNumber === 2 ? (<a href="https://hacklipse3.devfolio.co"><button>Register Here</button></a>) : (<button>Register Here</button>)}
+        {eventNumber === 1 ? (<a href="https://www.codingninjas.com/codestudio/contests/acm-thapar-presents-enigma-by-code-studio"><button>Register Here</button></a>) : (
+        eventNumber === 2 ? <a href="https://hacklipse3.devfolio.co/"><button>Register Here</button></a>
+        :
+        (eventNumber === 3 ? <a href="https://flamingo.devfolio.co/"><button>Register Here</button></a>
+        :
+        <a href="https://unstop.com/hackathons/kaggle-wars-thapar-institute-of-engineering-and-technology-tiet-patiala-657754?lb=JosSQ6Y"><button>Register Here</button></a>
+        )
+        )}
       </div>
       <div className="description">
         {eventNumber === 1 ? (<p>Enigma is a highly anticipated competitive programming competition, attracting top coding talent from around the country.
