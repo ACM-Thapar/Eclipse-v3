@@ -33,7 +33,7 @@ function Header() {
             </div>
             <div className="center-header"></div>
             <div className="right-header">
-                <a href="/">CONTACT US</a>
+                <Link to="/sponsors">CONTACT US</Link>
                 <Link to="/sponsors">SPONSORS</Link>
                 <a className='login-button' onClick={toggleModal}>LOG IN</a>
             </div>

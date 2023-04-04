@@ -1,5 +1,5 @@
 * {
-    overflow:auto;
+    overflow-y: auto;
 }
 
 @font-face {
@@ -30,6 +30,7 @@
     align-items: top;
     margin-top: 60px;
     max-height: 100px;
+    text-align: center;
 
 }
 
@@ -123,11 +124,31 @@
     height: 30px;
     margin: 10px;
     font-size: 15px;
-    background-color: #2D2D2D;
+    background-color: #7289da;
     color: white;
-    border-color: #CA9136;
-    border-width: 2px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
   } 
+
+  .anchor {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7289da;
+    padding: 5px 30px;
+    font-size: 16pt;
+    color: white;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
   .footer-bg{
     margin: auto;

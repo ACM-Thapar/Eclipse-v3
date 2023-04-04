@@ -2,13 +2,17 @@ import React, {useState} from "react";
 import "./Sponsors.css"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { BsDiscord } from "react-icons/bs";
 
 import {
     faFacebook,
     faInstagram,
     faYoutube,
-    faLinkedin,    
+    faLinkedin,  
+    faDiscord,  
   } from "@fortawesome/free-brands-svg-icons";
+
+import { Link } from 'react-router-dom'
    
 const Sponsors = () => {
     const [name, setName] = useState('');
@@ -49,11 +53,12 @@ const Sponsors = () => {
 
                 <div className="contact-form-bg">
                 <div className="contact-form">
-                    <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
-                    <input type="email" placeholder="Email Address" value={email} onChange={e => setEmail(e.target.value)} />
-                    <input type="text" placeholder="Phone Number" value={number} onChange={e => setNumber(e.target.value)} />
-                    <textarea placeholder="Enter your query" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                    <button onClick={submit}>Submit</button>
+                    <a className="anchor" href="https://discord.gg/Hcn3PncH">
+                    <div className="button-container">
+                        <FontAwesomeIcon icon={faDiscord} size="xl" className="contact-icon" />
+                        <div>Join Our Discord</div>
+                    </div>
+                    </a>
                 </div>
                 </div>
                     <div className="footer-bg">
