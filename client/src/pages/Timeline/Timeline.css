@@ -14,7 +14,10 @@
     padding: 70px 0px;
     font-family: atmospheric;
     background-color: black;
-    
+}
+
+.vertical-timeline-element-content {
+    overflow: hidden;
 }
 
 
@@ -29,4 +32,13 @@
 .title > img {
     display: flex;
     height: 5%;
+}
+
+
+.vertical-timeline-element-title {
+    font-size: 30px;
+}
+
+.timeline-element p {
+    font-size: 10px !important;
 }
