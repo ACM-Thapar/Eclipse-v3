@@ -20,8 +20,6 @@
     overflow: hidden;
 }
 
-
-
 .title {
     display: flex;
     justify-content: center;
@@ -41,4 +39,9 @@
 
 .timeline-element p {
     font-size: 10px !important;
+}
+@media (max-width:360px){
+    .title>img{
+        width: 80%;
+    }
 }
