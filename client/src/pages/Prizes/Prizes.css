@@ -8,7 +8,7 @@
     src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
-.tracks-container {
+.prizes-container {
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -38,12 +38,12 @@
     top: 0; */
 }
 
-.main-tracks-container {
+.main-prizes-container {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 55%;
-    height: 85%;
+    width: 60%;
+    height: 115%;
     margin-top: 40px;
     background-color: rgba(0, 0, 0, 0.615);
     /* justify-content: center; */
@@ -52,7 +52,7 @@
     /* align-items: center; */
 }
 
-.main-tracks-container p {
+.main-prizes-container p {
     margin-top: 20px;
     color: #E9AC15;
     font-size: 340%;
@@ -92,6 +92,7 @@
     font-family: montserrat;
     font-weight: 500;
     font-size: 8px;
+    padding: 0 20px;
 }
 
 .track img {
@@ -103,6 +104,10 @@
 
 .track div {
     font-size: 300%;
+}
+
+.main-prizes-container p {
+    height: 10%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -119,7 +124,7 @@
         width: 100%;
         font-size: 5px;
     }
-    .main-tracks-container {
+    .main-prizes-container {
         padding: 20px;
         width: 80%;
     }
