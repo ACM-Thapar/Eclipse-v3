@@ -30,6 +30,10 @@
     src: url('../../assets/fonts/aAtmospheric.otf');
   }
 
+@font-face {
+    font-family: montserrat;
+    src: url('../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
   
 .sponsors-container{ 
     height: 100vh;
@@ -159,6 +163,7 @@
   .anchor {
     display: flex;
     text-decoration: none;
+    font-family: montserrat;
   }
 
   .button-container{
