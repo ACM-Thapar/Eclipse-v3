@@ -5,7 +5,7 @@ import Menu from '../../components/Menu/Menu.jsx';
 import Hacklipse from '../../assets/images/bottomText.svg';
 import Enigma from '../../assets/images/enigma.svg';
 import Flamingo from '../../assets/images/Flamingo.svg';
-import Kaggle from '../../assets/images/kaggle.svg';
+import Kaggle from '../../assets/images/Kaggle_Wars.svg';
 import { AiOutlineRight, AiOutlineLeft } from 'react-icons/ai';
 
 const Events = () => {
@@ -27,7 +27,7 @@ const Events = () => {
                   :
                   meshSelected === 3 ? (<img className='event-name-img' src={Flamingo} alt="" />)
                   :
-                  <img className='event-name-img' src={Flamingo} alt="" />
+                  (<img className='event-name-img' style={{ transform: 'scale(0.8)' }} src={Kaggle} alt="" />)
                 }
             </div>
         </div>

@@ -25,7 +25,6 @@ const Timeline = () => {
             fontSize: "16px",
           }}
           contentArrowStyle={{ borderRight: "7px solid  black" }}
-          date="2011 - present"
           iconStyle={{ background: "black", color: "#fff", transform: 'scale(0.8)' }}
         >
           <h3 className="vertical-timeline-element-title">ENIGMA</h3>
@@ -34,7 +33,6 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work timeline-element"
-          date="2010 - 2011"
           iconStyle={{ background: "black", color: "#fff", transform: 'scale(0.8)' }}
           contentStyle={{
             background: "rgba(0,0,0,0.2)",
@@ -51,7 +49,6 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work timeline-element"
-          date="2008 - 2010"
           iconStyle={{ background: "black", color: "#fff", transform: 'scale(0.8)' }}
           contentStyle={{
             background: "rgba(0,0,0,0.2)",
@@ -81,7 +78,7 @@ const Timeline = () => {
         >
           <h3 className="vertical-timeline-element-title">HACKLIPSE</h3>
 
-          <p>DURATION: 8th - 9th April</p>
+          <p style={{ fontSize: 10 }}>DURATION: 8th - 9th April</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
