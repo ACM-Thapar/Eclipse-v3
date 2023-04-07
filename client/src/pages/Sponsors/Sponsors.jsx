@@ -143,9 +143,10 @@ const Sponsors = () => {
                                     <img width={150} style={{ marginBottom: 30 }} src={ECLIPSE_LOGO} alt="" />
                                 </div>
                                 <div className="footer-text">
-                                    Lorem ipsum dolor sit amet, consectetur 
-                                    adipiscing elit. Nunc vulputate libero et 
-                                    velit interdum, ac aliquet odio mattis. 
+                                    The tech event of the year that
+                                    you've all been waiting for is
+                                    finally here! Join us for a
+                                    week of fun and learning. 
                                 </div>
                                {/* <div className="socials">
                                <a href="https://www.facebook.com/acmthapar/"><FontAwesomeIcon icon={faFacebook} size="2xl" className="social-icon" /></a>
@@ -164,12 +165,9 @@ const Sponsors = () => {
                             <div style={{ marginTop: 8 }} className="contacts">
                                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }} className="mail1">
                                     <FontAwesomeIcon icon={faEnvelope} size="3x" className="contact-icon" />
-                                    <p style={{ fontSize: 13 }}>mail@acmtiet.com</p>
+                                    <p style={{ fontSize: 13 }}>acmcomputingchapter@thapar.edu</p>
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }} className="mail1">
-                                    <FontAwesomeIcon icon={faEnvelope} size="3x" className="contact-icon" />
-                                    <p style={{ fontSize: 13 }}>mail@acmtiet.com</p>
-                                </div>
+                                
                                 {/* <FontAwesomeIcon icon={faPhone} size="xl" className="contact-icon" />
                                 <FontAwesomeIcon icon={faPhone} size="xl" className="contact-icon" /> */}
                             </div>
