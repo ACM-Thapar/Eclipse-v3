@@ -43,8 +43,7 @@ const Timeline = () => {
             fontSize: "16px",
           }}
         >
-          <h3 className="vertical-timeline-element-title">KAGGLE WARS</h3>
-
+          <h3 id="make_small" className="vertical-timeline-element-title">KAGGLE WARS</h3>
           <p>DURATION: 9th April</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -65,7 +64,7 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2006 - 2008"
+          // date="2006 - 2008"
           iconStyle={{ background: "black", color: "#fff", transform: 'scale(0.8)' }}
           contentStyle={{
             background: "rgba(0,0,0,0.2)",

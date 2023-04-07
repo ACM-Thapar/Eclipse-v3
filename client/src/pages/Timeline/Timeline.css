@@ -40,6 +40,9 @@
 .timeline-element p {
     font-size: 10px !important;
 }
+#make_small{
+    font-size: 25px;
+}
 @media (max-width:360px){
     .title>img{
         width: 80%;
