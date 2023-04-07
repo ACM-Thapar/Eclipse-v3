@@ -26,14 +26,14 @@ const Prizes = () => {
                   <img src={Track1} alt="" />
                   <div className="track-name">THE BEST HACK</div>
                     <div id='prizes-statement-1' className="problem-statement">
-                      TO BE DISCLOSED
+                      15k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + Goodies from Coding Minutes + 5 Udemy Courses to Each Member + Coding Ninja Courses + Elearnmarkets Courses + Puma Coupons
                   </div>
                 </div>
                 <div onMouseEnter={() => hoverActivate(2)} onMouseLeave={() => hoverDeactivate(2)} className="track track-2">
                   <img src={Track2} alt="" />
                   <div className="track-name">TRACK WINNERS</div>
                     <div id='prizes-statement-2' className="problem-statement">
-                      TO BE DISCLOSED
+                    7.5k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + Goodies from Coding Minutes + 5 Udemy Courses to Each Member + Coding Ninja Courses + Elearnmarkets Courses + Puma Coupons
                   </div>
                 </div>
             </div>
@@ -42,14 +42,14 @@ const Prizes = () => {
                   <img src={Track2} alt="" />
                   <div className="track-name">BEST FIRST YEAR HACK</div>
                     <div id='prizes-statement-3' className="problem-statement">
-                      TO BE DISCLOSED
+                    5k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + 5 Udemy Courses to Each Member + Coding Ninja Courses + Elearnmarkets Courses + Puma Coupons
                   </div>
                 </div>
                 <div onMouseEnter={() => hoverActivate(4)} onMouseLeave={() => hoverDeactivate(4)} className="track track-3">
                   <img src={Track3} alt="" />
                   <div className="track-name">BEST PRESENTATION</div>
                     <div id='prizes-statement-4' className="problem-statement">
-                      TO BE DISCLOSED
+                    2.5k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + 3 Udemy Courses to Each Member + Coding Ninja Courses + Puma Coupons
                   </div>
                 </div>
             </div>
@@ -58,14 +58,14 @@ const Prizes = () => {
                   <img src={Track4} alt="" />
                   <div className="track-name">BEST NO CODE HACK</div>
                     <div id='prizes-statement-5' className="problem-statement">
-                      TO BE DISCLOSED
+                    2.5k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + 3 Udemy Courses to Each Member + Coding Ninja Courses + Puma Coupons
                   </div>
                 </div>
                 <div onMouseEnter={() => hoverActivate(6)} onMouseLeave={() => hoverDeactivate(6)} className="track track-4">
                   <img src={Track4} alt="" />
                   <div className="track-name">BEST BUSINESS SCOPE</div>
                     <div id='prizes-statement-6' className="problem-statement">
-                      TO BE DISCLOSED
+                    2.5k Cash prize + Official Eclipse Goodies + Goodies from Probo + Swag Kits from Devfolio + 3 Udemy Courses to Each Member + Coding Ninja Courses + Puma Coupons
                   </div>
                 </div>
             </div>
@@ -74,14 +74,14 @@ const Prizes = () => {
                   <img src={Track2} alt="" />
                   <div className="track-name">MOST USELESS HACK</div>
                     <div id='prizes-statement-7' className="problem-statement">
-                      TO BE DISCLOSED
+                      Goodies
                   </div>
                 </div>
                 <div onMouseEnter={() => hoverActivate(8)} onMouseLeave={() => hoverDeactivate(8)} className="track track-2">
                   <img src={Track2} alt="" />
                   <div className="track-name">MOST FUNNY HACK</div>
                     <div id='prizes-statement-8' className="problem-statement">
-                      TO BE DISCLOSED
+                      Goodies
                   </div>
                 </div>
             </div>
@@ -90,14 +90,14 @@ const Prizes = () => {
                   <img src={Track4} alt="" />
                   <div className="track-name">BEST PROJECT NAME</div>
                     <div id='prizes-statement-9' className="problem-statement">
-                      TO BE DISCLOSED
+                      Goodies
                   </div>
                 </div>
                 <div onMouseEnter={() => hoverActivate(10)} onMouseLeave={() => hoverDeactivate(10)} className="track track-4">
                   <img src={Track4} alt="" />
                   <div className="track-name">BEST DOCUMENTATION</div>
                     <div id='prizes-statement-10' className="problem-statement">
-                      TO BE DISCLOSED
+                      Goodies
                   </div>
                 </div>
             </div>
